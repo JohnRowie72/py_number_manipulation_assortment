@@ -9,10 +9,12 @@ while True:
         
         # check if the number is already in the list
         if number in numbers:
-            print(f"{number} is a duplicate.")
+            print(f"{number} is now a duplicate number.")
         else:
-            print(f"{number} is unique.")
+            print(f"{number} is a unique number.")
             numbers.append(number)
-            
+
     except ValueError:
+        # if input is invalid, stop asking for input
+        print("Invalid input. Stopping the program.")
         break
