@@ -8,11 +8,14 @@ while True:
         number = int(input("Enter a number: "))
         numbers.append(number)
 
-        # display the highest number so far using max()
-        highest_number = max(numbers)
-        print(f"The highest number is: {highest_number}")
-
-    # If input is invalid (ValueError)
     except ValueError:
         print("Invalid input. Stopping the program")
         break
+
+# display the highest number so far using max()
+if numbers:
+    highest_number = max(numbers)
+    print(f"The highest number is: {highest_number}")
+
+else:
+    print("No numbers were entered.")
