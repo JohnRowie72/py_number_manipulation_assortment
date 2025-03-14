@@ -10,5 +10,11 @@ while True:
     except ValueError:
         print("Invalid input. Stopping the program")
         break
-    
+
 # display the result
+if numbers:
+    average_of_numbers = sum(numbers) / len(numbers)
+    print(f"The average is: {average_of_numbers}")
+
+else:
+    print("No numbers were entered")
