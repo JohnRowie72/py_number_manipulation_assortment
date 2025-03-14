@@ -12,10 +12,11 @@ while True:
         # if input is invalid, stop asking for input
         print("Invalid input. Stopping the program.")
         break
-
-# display the lowest number
+    
+# display the result
 if numbers:
     print(f"The lowest number entered is: {min(numbers)}")
 
 else:
-    print("No numbers were entered")
+    print("No number were entered")
+
