@@ -9,6 +9,9 @@ while True:
         numbers.append(number)
         
         # display the result
-        print(f"The lowest number is: {min(numbers)}")
-        
-    # if input is invalid, stop asking for input
+        print(f"The lowest number entered is: {min(numbers)}")
+
+    except ValueError:
+        # if input is invalid, stop asking for input
+        print("Invalid input. Stopping the program.")
+
