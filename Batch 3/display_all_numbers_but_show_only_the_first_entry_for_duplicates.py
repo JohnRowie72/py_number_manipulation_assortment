@@ -10,3 +10,4 @@ for i in range(10):
         number_seen.add(number)
 
 # display the result
+print(f"The numbers are: {numbers}")
