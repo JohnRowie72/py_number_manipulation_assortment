@@ -19,4 +19,8 @@ for number in numbers:
         duplicates.append(number)
 
 # display the duplicate numbers
-print(f"The duplicate numbers are: {duplicates}")
+if duplicates:
+    print(f"The duplicate numbers are: {duplicates}")
+else:
+    print("No duplicate numbers found")
+
