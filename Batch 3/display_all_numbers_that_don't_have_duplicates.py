@@ -14,4 +14,9 @@ for number in numbers:
         unique_numbers.append(number)
 
 # display all unique numbers
-print(f"The unique numbers are: {unique_numbers}")
+if unique_numbers:
+    print(f"The unique numbers are: {unique_numbers}")
+
+else:
+    print("There are no unique numbers.")
+    
