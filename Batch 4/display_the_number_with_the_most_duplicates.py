@@ -7,14 +7,16 @@ while True:
     # try to convert input to an integer
     try:
         number = int(input("Enter a number: "))
-        numbers.append(num)
+        numbers.append(number)
 
         # find the number with the most duplicates
         most_frequent_number = max(set(numbers), key=numbers.count)
 
         # display the most frequent number
         print(f"The number with the most duplicates is: {most_frequent_number}")
-        
+
     # if input is invalid (ValueError)
-        # print error message
-        # break the loop
+    except ValueError:
+        print("Invalid input. Stopping the program")
+        break
+
