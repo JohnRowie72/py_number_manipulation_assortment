@@ -8,14 +8,17 @@ while True:
         number = int(input("Enter a number: "))
         numbers.append(number)
 
-        # sort the list in descending
-        numbers.sort(reverse=True)
-
-        # display the sorted list
-        print(f"The numbers from highest to lowest: {numbers}")
-
-    # if input is invalid (ValueError)
     except ValueError:
-        # print error message
         print("Invalid input. Stopping the program")
         break
+
+# display the numbers from highest to lowest
+if numbers:
+    # sort the list in descending
+    numbers.sort(reverse=True)
+
+    # display the sorted list
+    print(f"The numbers from highest to lowest: {numbers}")
+
+else:
+    print("No numbers were entered.")
