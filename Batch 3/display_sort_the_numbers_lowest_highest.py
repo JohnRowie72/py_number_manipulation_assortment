@@ -10,10 +10,13 @@ while True:
         # add the number to the list
         numbers.append(number)
 
-        # sort the list in ascending order
+        # to sort the list in ascending order
         numbers.sort()
         
         # display the sorted list
+        print(f"The numbers in order: {numbers}")
+
     # if input is invalid (ValueError)
-        # print error message
-        # break the loop
+    except ValueError:
+        print("Invalid input. Stopping the program")
+        break
